@@ -23,7 +23,7 @@ function NavBar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="favorites">Favorite Drinks</Link>
+            <Link to="/favorites">Favorite Drinks</Link>
           </li>
         </ul>
       </nav>
