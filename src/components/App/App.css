@@ -1,0 +1,19 @@
+.html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant', sans-serif;
+  background: 
+  url(../../assets/noise.svg),
+  radial-gradient(
+    circle at 50% 10%,
+    #cb5b23 17%,
+    #a44c63 30%,
+    #1b6874 80%
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #333;
+}
