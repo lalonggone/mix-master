@@ -2,8 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './HomePage.css'
-import FavoriteDrinksGrid from '../FavoriteDrinksGrid/FavoriteDrinksGrid'
-import AllDrinksGrid from '../AllDrinksGrid/AllDrinksGrid'
 
 function HomePage() {
   const [drinkType, setDrinkType] = useState('')
@@ -44,10 +42,8 @@ function HomePage() {
             NA beverages
           </label>
         </div>
-        <button onClick={() => console.log(drinkType)}>Find Drinks</button>
+        <button onClick={() => handleChoice(drinkType)}>Find Drinks</button>
       </section>
-      <AllDrinksGrid className="allDrinksGrid" />
-      <FavoriteDrinksGrid className="favoriteDrinksGrid" />
     </div>
   )
 }

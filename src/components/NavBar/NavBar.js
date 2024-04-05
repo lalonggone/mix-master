@@ -1,14 +1,16 @@
-import React from 'react'
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import './NavBar.css'
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import './NavBar.css';
 
 function NavBar() {
-  const [showAllDrinks, setShowAllDrinks] = useState(true)
+  const location = useLocation();
+  
+  const initialShowAllDrinks = location.pathname === "/all";
+  const [showAllDrinks, setShowAllDrinks] = useState(initialShowAllDrinks);
 
   const toggleDrinks = () => {
-    setShowAllDrinks(!showAllDrinks)
-  }
+    setShowAllDrinks(!showAllDrinks);
+  };
 
   return (
     <div>
@@ -18,8 +20,8 @@ function NavBar() {
             <Link to="/random">Random Drink</Link>
           </li>
           <li className="nav-item" onClick={toggleDrinks}>
-            <Link to={showAllDrinks ? '/all' : '/na'}>
-              {showAllDrinks ? 'All Drinks' : 'NA Drinks'}
+            <Link to={showAllDrinks ? '/na' : '/all'}>
+              {showAllDrinks ? 'NA Drinks' : 'All Drinks'}
             </Link>
           </li>
           <li className="nav-item">
@@ -28,7 +30,7 @@ function NavBar() {
         </ul>
       </nav>
     </div>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
