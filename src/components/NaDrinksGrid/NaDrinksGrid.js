@@ -6,7 +6,7 @@ function NaDrinksGrid() {
   return (
     <div>
        <section className="home-title">
-        <h1>Welcome to Mix Master</h1>
+        <h1>Mix Master</h1>
       </section>
         <NavBar />
     </div>
