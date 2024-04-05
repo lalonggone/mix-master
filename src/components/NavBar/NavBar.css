@@ -1,0 +1,18 @@
+.nav-container {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    
+    .nav-list {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: space-around;
+
+        .nav-item {
+            cursor: pointer;
+        }
+    }
+
+}

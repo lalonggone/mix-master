@@ -1,0 +1,17 @@
+.html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(
+    circle at 20% 20%,
+    #fe9966 15%,
+    rgb(198, 103, 233) 60%,
+    #1eb8bd 90%
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #333;
+}
