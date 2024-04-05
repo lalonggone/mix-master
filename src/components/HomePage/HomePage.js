@@ -14,32 +14,33 @@ function HomePage() {
       navigate('/na')
     }
   }
+
   return (
     <div>
       <section className="home-title">
-        <h1>Welcome to Mix Master</h1>
-        <p>Your personal drink recipe book</p>
+        <h1>Mix Master</h1>
+        <p>your drink recipe companion</p>
       </section>
       <section className="quiz-section">
         <h1 className="quiz-title">Do you prefer...</h1>
         <div className="radio-container">
-          <label>
+          <label className="radio">
+              Alcoholic beverages
             <input
               type="radio"
               name="drinkType"
               value="alcoholic"
               onChange={(e) => setDrinkType(e.target.value)}
-            />
-            Alcoholic beverages
+              />
           </label>
-          <label>
+          <label className="radio">
+              NA beverages
             <input
               type="radio"
               name="drinkType"
               value="na"
               onChange={(e) => setDrinkType(e.target.value)}
             />
-            NA beverages
           </label>
         </div>
         <button onClick={() => handleChoice(drinkType)}>Find Drinks</button>

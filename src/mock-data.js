@@ -10,6 +10,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a sprig of mint and a lime wedge.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -35,6 +36,7 @@ const mixedDrinkRecipes = [
             step4: "Season with black pepper.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -48,6 +50,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a lemon twist or olive.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -61,6 +64,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a lime twist.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -74,6 +78,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a lemon wedge.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -88,6 +93,7 @@ const mixedDrinkRecipes = [
             step5: "Garnish with a lime wedge.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -103,6 +109,7 @@ const mixedDrinkRecipes = [
             step6: "Garnish with an orange twist and a cherry.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -115,6 +122,7 @@ const mixedDrinkRecipes = [
             step3: "Garnish with a pineapple slice and maraschino cherry.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -128,6 +136,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with an orange slice and maraschino cherry.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -141,6 +150,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a lemon wheel and a cherry.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -153,6 +163,7 @@ const mixedDrinkRecipes = [
             step3: "Top with light cream and stir gently.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -166,6 +177,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with an orange twist.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -179,6 +191,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a lime wheel.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -193,6 +206,7 @@ const mixedDrinkRecipes = [
             step5: "Garnish with a pineapple slice and maraschino cherry.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -206,6 +220,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a maraschino cherry.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -219,6 +234,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with an orange slice and cherry.",
         },
         alcoholic: true,
+        isFavorite: true,
         image: "",
     },
     {
@@ -232,6 +248,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a lemon wheel and cherry.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -245,6 +262,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a lemon wheel.",
         },
         alcoholic: true,
+        isFavorite: true,
         image: "",
     },
     {
@@ -258,6 +276,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a few drops of Angostura bitters.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -271,6 +290,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a pineapple spear and mint sprig.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -284,6 +304,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with an orange slice and cherry.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -296,6 +317,7 @@ const mixedDrinkRecipes = [
             step3: "Stir gently and garnish with an orange slice.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -308,6 +330,7 @@ const mixedDrinkRecipes = [
             step3: "Stir gently and garnish with a lime wedge.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -321,6 +344,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a pineapple spear and mint sprig.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -333,6 +357,7 @@ const mixedDrinkRecipes = [
             step3: "Garnish with a pineapple slice and maraschino cherry.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -347,6 +372,7 @@ const mixedDrinkRecipes = [
             step5: "Garnish with a lime wedge.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -359,6 +385,7 @@ const mixedDrinkRecipes = [
             step3: "Stir well and garnish with a mint sprig.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -372,6 +399,7 @@ const mixedDrinkRecipes = [
             step4: "Top with whipped cream.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
@@ -384,6 +412,7 @@ const mixedDrinkRecipes = [
             step3: "Stir well and garnish with a mint sprig.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
 ];
@@ -408,6 +437,6 @@ const drinkNames = mixedDrinkRecipes.map((drink) => drink.name)
 //     'Paloma',          'Mint Julep',
 //     'Irish Coffee',    'Mint Julep'
 //   ]
-console.log(drinkNames)
+// console.log(drinkNames)
 
 module.exports = mixedDrinkRecipes;

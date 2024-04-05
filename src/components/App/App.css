@@ -2,14 +2,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cormorant', sans-serif;
   background: 
   url(../../assets/noise.svg),
   radial-gradient(
-    circle at 20% 20%,
-    #fe9966 15%,
-    rgb(198, 103, 233) 60%,
-    #1eb8bd 90%
+    circle at 50% 10%,
+    #cb5b23 17%,
+    #a44c63 30%,
+    #1b6874 80%
   );
   background-attachment: fixed;
   background-repeat: no-repeat;

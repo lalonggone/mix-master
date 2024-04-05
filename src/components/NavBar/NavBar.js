@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import './NavBar.css';
+import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import './NavBar.css'
 
 function NavBar() {
-  const location = useLocation();
-  
-  const initialShowAllDrinks = location.pathname === "/all";
-  const [showAllDrinks, setShowAllDrinks] = useState(initialShowAllDrinks);
+  const location = useLocation()
+
+  const initialShowAllDrinks = location.pathname === '/all'
+  const [showAllDrinks, setShowAllDrinks] = useState(initialShowAllDrinks)
 
   const toggleDrinks = () => {
-    setShowAllDrinks(!showAllDrinks);
-  };
+    setShowAllDrinks(!showAllDrinks)
+  }
 
   return (
     <div>
+    <div className="border"></div>
       <nav className="nav-container">
         <ul className="nav-list">
           <li className="nav-item">
@@ -29,8 +30,9 @@ function NavBar() {
           </li>
         </ul>
       </nav>
+        <div className="border"></div>
     </div>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar
