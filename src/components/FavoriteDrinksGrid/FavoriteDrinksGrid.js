@@ -5,7 +5,7 @@ import NavBar from '../NavBar/NavBar'
 
 function FavoriteDrinksGrid({ setDrinkType }) {
   const [favorites, setFavorites] = useState([])
-  console.log(favorites)
+
   useEffect(() => {
     findFavorites()
   }, [])
@@ -13,17 +13,16 @@ function FavoriteDrinksGrid({ setDrinkType }) {
   const findFavorites = () => {
     const filteredRecipes = mixedDrinkRecipes.filter(recipe => {
       return recipe.isFavorite
+    }).map(recipe => {
+      return (
+        <div className="drink-card" key={recipe.id}>
+          <img src={recipe.image} alt={recipe.name} />
+          <h2>{recipe.name}</h2>
+        </div>
+      )
     })
     setFavorites(filteredRecipes)
   }
-  const displayFavorites = favorites.map(recipe => {
-    return (
-      <div className="drink-card" key={recipe.id}>
-        <img src={recipe.image} alt={recipe.name} />
-        <h2>{recipe.name}</h2>
-      </div>
-    )
-  })
 
   return (
     <div>
@@ -32,7 +31,7 @@ function FavoriteDrinksGrid({ setDrinkType }) {
       </section>
       <NavBar setDrinkType={setDrinkType} />
       <section className="drinks-grid">
-        {displayFavorites}
+        {favorites}
       </section>
     </div>
   )
