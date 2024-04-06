@@ -28,6 +28,13 @@ function App() {
     chooseRecipes(filteredRecipes)
   }
 
+  const toggleFavorite = (id) => {
+    const targetDrink = mixedDrinkRecipes.find((drink) => {
+      return drink.id === id;
+    })
+    targetDrink.isFavorite = !targetDrink.isFavorite;
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -37,7 +44,7 @@ function App() {
           <Route path="/mocktails" element={<NaDrinksGrid recipes={chosenRecipes} setDrinkType={setDrinkType} />} />
           <Route path="/favorites" element={<FavoriteDrinksGrid setDrinkType={setDrinkType} />} />
           <Route path="/random" element={<RandomDrink setDrinkType={setDrinkType}/>} />
-          <Route path="/drink/:id" element={<DrinkDetails />} />
+          <Route path="/drink/:id" element={<DrinkDetails toggleFavorite={toggleFavorite}/>} />
         </Routes>
       </BrowserRouter>
     </div>

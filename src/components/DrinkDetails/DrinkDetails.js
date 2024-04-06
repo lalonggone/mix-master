@@ -4,8 +4,9 @@ import { useParams } from 'react-router-dom'
 import './DrinkDetails.css';
 import NavBar from '../NavBar/NavBar';
 import HeartIcon from '../../assets/heart-icon.svg';
+import HeartIconRed from '../../assets/heart-icon-red.svg';
 
-function DrinkDetails() {
+function DrinkDetails({ toggleFavorite }) {
   const { id } = useParams();
   const parsedId = parseInt(id);
   const targetDrink = mixedDrinkRecipes.find((drink) => {
@@ -16,7 +17,7 @@ function DrinkDetails() {
       <NavBar className='drink-details-nav'/>
       <div className='drink-details-container'>
         <img src={targetDrink.image} alt={`aesthetic view of a ${targetDrink.name}`} className='drink-details-image'/>
-        <img src={HeartIcon} alt="heart icon" className='drink-details-heart-icon'/>
+        <img src={HeartIcon} alt="heart icon" className='drink-details-heart-icon' onClick={toggleFavorite}/>
         <article className='drink-details-text'>
           <div className='drink-details-headers'>
             <h1 className='drink-details-name'>{targetDrink.name}</h1>

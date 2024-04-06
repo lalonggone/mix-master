@@ -23,6 +23,7 @@ const mixedDrinkRecipes = [
             step3: "Stir gently and garnish with a lime wedge.",
         },
         alcoholic: true,
+        isFavorite: false,
         image: "",
     },
     {
