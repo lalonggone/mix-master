@@ -343,8 +343,8 @@ const mixedDrinkRecipes = [
             step3: "Shake well and strain into a rocks glass filled with crushed ice.",
             step4: "Garnish with a pineapple spear and mint sprig.",
         },
-        alcoholic: true,
-        isFavorite: false,
+        alcoholic: false,
+        isFavorite: true,
         image: "",
     },
     {
@@ -356,8 +356,8 @@ const mixedDrinkRecipes = [
             step2: "Pour into a chilled glass.",
             step3: "Garnish with a pineapple slice and maraschino cherry.",
         },
-        alcoholic: true,
-        isFavorite: false,
+        alcoholic: false,
+        isFavorite: true,
         image: "",
     },
     {
