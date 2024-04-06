@@ -36,7 +36,7 @@ function App() {
           <Route path="/cocktails" element={<AllDrinksGrid recipes={chosenRecipes} setDrinkType={setDrinkType} />} />
           <Route path="/mocktails" element={<NaDrinksGrid recipes={chosenRecipes} setDrinkType={setDrinkType} />} />
           <Route path="/favorites" element={<FavoriteDrinksGrid setDrinkType={setDrinkType} />} />
-          <Route path="/random" element={<RandomDrink />} />
+          <Route path="/random" element={<RandomDrink setDrinkType={setDrinkType}/>} />
           <Route path="/drink/:id" element={<DrinkDetails />} />
         </Routes>
       </BrowserRouter>

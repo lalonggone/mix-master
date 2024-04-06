@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import NavBar from '../NavBar/NavBar'
 import mixedDrinkRecipes from '../../mock-data'
 
-const RandomDrink = () => {
+const RandomDrink = ({ setDrinkType }) => {
   const [drink, setDrink] = useState('')
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const RandomDrink = () => {
       <section className="home-title">
         <h1>Mix Master</h1>
       </section>
-      <NavBar />
+      <NavBar setDrinkType={setDrinkType}/>
       <section className="drinks-grid">
         <div className="drink-card" key={drink.id}>
           <img src={drink.image} alt={drink.name} />
