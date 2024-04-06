@@ -344,7 +344,7 @@ const mixedDrinkRecipes = [
             step4: "Garnish with a pineapple spear and mint sprig.",
         },
         alcoholic: false,
-        isFavorite: false,
+        isFavorite: true,
         image: "",
     },
     {
@@ -357,7 +357,7 @@ const mixedDrinkRecipes = [
             step3: "Garnish with a pineapple slice and maraschino cherry.",
         },
         alcoholic: false,
-        isFavorite: false,
+        isFavorite: true,
         image: "",
     },
     {

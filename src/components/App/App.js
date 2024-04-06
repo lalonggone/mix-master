@@ -18,12 +18,11 @@ function App() {
   useEffect(() => {
     findRecipes()
   }, [drinkType])
-  
+
   const findRecipes = () => {
     const filteredRecipes = mixedDrinkRecipes.filter(recipe => {
       return recipe.alcoholic.toString() === drinkType
     })
-    console.log(filteredRecipes)
     chooseRecipes(filteredRecipes)
   }
 
@@ -34,7 +33,7 @@ function App() {
           <Route path="/" element={<HomePage chooseRecipes={chooseRecipes} drinkType={drinkType} setDrinkType={setDrinkType} findRecipes={findRecipes} />} />
           <Route path="/all" element={<AllDrinksGrid recipes={chosenRecipes} setDrinkType={setDrinkType} />} />
           <Route path="/na" element={<AllDrinksGrid recipes={chosenRecipes} setDrinkType={setDrinkType} />} />
-          <Route path="/favorites" element={<FavoriteDrinksGrid />} />
+          <Route path="/favorites" element={<FavoriteDrinksGrid setDrinkType={setDrinkType}/>} />
           {/* <Route path="/random" element={<RandomDrink />} /> */}
           {/* <Route path="/drink/:id" element={<DrinkDetails />} /> */}
           {/* <Route path="*" element={<NotFound />} /> */}
