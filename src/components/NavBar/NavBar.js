@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import mixedDrinkRecipes from '../../mock-data'
 import './NavBar.css'
 
-function NavBar() {
+function NavBar({ generateRandomDrink}) {
   const location = useLocation()
 
   const initialShowAllDrinks = location.pathname === '/all'
@@ -14,11 +15,13 @@ function NavBar() {
 
   return (
     <div>
-    <div className="border"></div>
+      <div className="border"></div>
       <nav className="nav-container">
         <ul className="nav-list">
           <li className="nav-item">
-            <Link to="/random">Random Drink</Link>
+            <Link to="/random" >
+              Random Drink
+            </Link>
           </li>
           <li className="nav-item" onClick={toggleDrinks}>
             <Link to={showAllDrinks ? '/na' : '/all'}>
@@ -30,7 +33,7 @@ function NavBar() {
           </li>
         </ul>
       </nav>
-        <div className="border"></div>
+      <div className="border"></div>
     </div>
   )
 }

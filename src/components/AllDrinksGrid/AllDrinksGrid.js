@@ -17,15 +17,6 @@ function AllDrinksGrid() {
             <div className="drink-card" key={recipe.id}>
               <img src={recipe.image} alt={recipe.name} />
               <h2>{recipe.name}</h2>
-              {/* <ul>
-                {recipe.ingredients.map((ingredient, index) => {
-                  return (
-                    <li key={index}>
-                      {ingredient}
-                    </li>
-                  )
-                })}
-              </ul> */}
             </div>
           )
         })}
