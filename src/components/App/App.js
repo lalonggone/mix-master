@@ -2,7 +2,6 @@ import './App.css';
 import mixedDrinkRecipes from '../../mock-data'
 import HomePage from '../HomePage/HomePage';
 import AllDrinksGrid from '../AllDrinksGrid/AllDrinksGrid';
-// import NaDrinksGrid from '../NaDrinksGrid/NaDrinksGrid';
 import FavoriteDrinksGrid from '../FavoriteDrinksGrid/FavoriteDrinksGrid';
 import React, { useState, useEffect } from 'react'
 // import RandomDrink from '../RandomDrink/RandomDrink';
@@ -31,9 +30,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage chooseRecipes={chooseRecipes} drinkType={drinkType} setDrinkType={setDrinkType} findRecipes={findRecipes} />} />
-          <Route path="/all" element={<AllDrinksGrid recipes={chosenRecipes} setDrinkType={setDrinkType} />} />
-          <Route path="/na" element={<AllDrinksGrid recipes={chosenRecipes} setDrinkType={setDrinkType} />} />
-          <Route path="/favorites" element={<FavoriteDrinksGrid setDrinkType={setDrinkType}/>} />
+          <Route path="/cocktails" element={<AllDrinksGrid recipes={chosenRecipes} setDrinkType={setDrinkType} />} />
+          <Route path="/mocktails" element={<AllDrinksGrid recipes={chosenRecipes} setDrinkType={setDrinkType} />} />
+          <Route path="/favorites" element={<FavoriteDrinksGrid setDrinkType={setDrinkType} />} />
           {/* <Route path="/random" element={<RandomDrink />} /> */}
           {/* <Route path="/drink/:id" element={<DrinkDetails />} /> */}
           {/* <Route path="*" element={<NotFound />} /> */}

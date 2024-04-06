@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-
 import './NavBar.css'
 
 function NavBar({ setDrinkType }) {
   const location = useLocation()
 
-  const initialShowAllDrinks = location.pathname === '/all'
+  const initialShowAllDrinks = location.pathname === '/cocktails'
   const [showAllDrinks, setShowAllDrinks] = useState(initialShowAllDrinks)
 
   const toggleDrinks = () => {
@@ -27,8 +26,8 @@ function NavBar({ setDrinkType }) {
             <Link to="/random">Random Drink</Link>
           </li>
           <li className="nav-item" onClick={toggleDrinks}>
-            <Link to={showAllDrinks ? '/na' : '/all'}>
-              {showAllDrinks ? 'NA Drinks' : 'All Drinks'}
+            <Link to={showAllDrinks ? '/mocktails' : '/cocktails'}>
+              {showAllDrinks ? 'Mocktails' : 'Cocktails'}
             </Link>
           </li>
           <li className="nav-item">
