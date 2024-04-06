@@ -1,17 +1,20 @@
 import React from 'react'
-import { useState } from 'react'
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import mixedDrinkRecipes from '../../mock-data' 
 import './HomePage.css'
 
-function HomePage() {
-  const [drinkType, setDrinkType] = useState('')
+function HomePage({drinkType, setDrinkType, findRecipes}) {
+
   const navigate = useNavigate()
 
   const handleChoice = (choice) => {
-    if (choice === 'alcoholic') {
+    if (choice === 'true') {
       navigate('/all')
-    } else if (choice === 'na') {
+      findRecipes()
+    } else if (choice === 'false') {
       navigate('/na')
+      findRecipes()
     }
   }
 
@@ -29,7 +32,7 @@ function HomePage() {
             <input
               type="radio"
               name="drinkType"
-              value="alcoholic"
+              value="true"
               onChange={(e) => setDrinkType(e.target.value)}
               />
           </label>
@@ -38,7 +41,7 @@ function HomePage() {
             <input
               type="radio"
               name="drinkType"
-              value="na"
+              value="false"
               onChange={(e) => setDrinkType(e.target.value)}
             />
           </label>

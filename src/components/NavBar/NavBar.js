@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+
 import './NavBar.css'
 
-function NavBar() {
+function NavBar({ setDrinkType }) {
   const location = useLocation()
 
   const initialShowAllDrinks = location.pathname === '/all'
@@ -10,11 +11,16 @@ function NavBar() {
 
   const toggleDrinks = () => {
     setShowAllDrinks(!showAllDrinks)
+    if (showAllDrinks) {
+      setDrinkType('false')
+    } else {
+      setDrinkType('true')
+    }
   }
 
   return (
     <div>
-    <div className="border"></div>
+      <div className="border"></div>
       <nav className="nav-container">
         <ul className="nav-list">
           <li className="nav-item">
@@ -30,7 +36,7 @@ function NavBar() {
           </li>
         </ul>
       </nav>
-        <div className="border"></div>
+      <div className="border"></div>
     </div>
   )
 }
