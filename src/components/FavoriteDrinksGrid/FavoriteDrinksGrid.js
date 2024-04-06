@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import DrinkDetails from '../DrinkDetails/DrinkDetails'
-import mixedDrinkRecipes from '../../mock-data'
-import NavBar from '../NavBar/NavBar'
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import DrinkDetails from '../DrinkDetails/DrinkDetails';
+import mixedDrinkRecipes from '../../mock-data';
+import NavBar from '../NavBar/NavBar';
 
 function FavoriteDrinksGrid({ setDrinkType }) {
   const [favorites, setFavorites] = useState([])
@@ -40,3 +41,7 @@ function FavoriteDrinksGrid({ setDrinkType }) {
 
 
 export default FavoriteDrinksGrid;
+
+FavoriteDrinksGrid.propTypes = {
+  setDrinkType: PropTypes.func.isRequired
+};

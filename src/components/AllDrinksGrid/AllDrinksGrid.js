@@ -1,7 +1,8 @@
 
-import React, { useEffect } from 'react'
-import './AllDrinksGrid.css'
-import NavBar from '../NavBar/NavBar'
+import React, { useEffect } from 'react';
+import './AllDrinksGrid.css';
+import NavBar from '../NavBar/NavBar';
+import PropTypes from 'prop-types';
 
 
 function AllDrinksGrid({ recipes, setDrinkType }) {
@@ -38,3 +39,15 @@ return (
 
 
 export default AllDrinksGrid;
+
+AllDrinksGrid.propTypes ={
+  recipes: PropTypes.arrayOf(PropTypes.shape({
+    alcoholic: PropTypes.bool,
+    directions: PropTypes.object,
+    id: PropTypes.number,
+    ingredients: PropTypes.array, 
+    isFavorite: PropTypes.bool,
+    name: PropTypes.string
+  })).isRequired,
+  setDrinkType: PropTypes.func.isRequired
+};

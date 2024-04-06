@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
 import './NaDrinksGrid.css'
 import NavBar from '../NavBar/NavBar'
 
@@ -36,3 +37,14 @@ function NaDrinksGrid({ recipes, setDrinkType }) {
 
 export default NaDrinksGrid;
 
+NaDrinksGrid.propTypes ={
+    recipes: PropTypes.arrayOf(PropTypes.shape({
+      alcoholic: PropTypes.bool,
+      directions: PropTypes.object,
+      id: PropTypes.number,
+      ingredients: PropTypes.array, 
+      isFavorite: PropTypes.bool,
+      name: PropTypes.string
+    })).isRequired,
+    setDrinkType: PropTypes.func.isRequired
+  };
