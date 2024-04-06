@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import mixedDrinkRecipes from '../../mock-data'
 import './NavBar.css'
 
-function NavBar({ generateRandomDrink}) {
+function NavBar() {
   const location = useLocation()
 
   const initialShowAllDrinks = location.pathname === '/all'
@@ -13,12 +13,16 @@ function NavBar({ generateRandomDrink}) {
     setShowAllDrinks(!showAllDrinks)
   }
 
+  const refreshPage = () => {
+    window.location.reload()
+  }
+
   return (
     <div>
       <div className="border"></div>
       <nav className="nav-container">
         <ul className="nav-list">
-          <li className="nav-item">
+          <li className="nav-item" onClick={refreshPage} >
             <Link to="/random" >
               Random Drink
             </Link>

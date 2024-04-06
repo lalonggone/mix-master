@@ -21,7 +21,12 @@ const RandomDrink = () => {
         <h1>Mix Master</h1>
       </section>
       <NavBar />
-      <p>{drink.name}</p>
+      <section className="drinks-grid">
+        <div className="drink-card" key={drink.id}>
+          <img src={drink.image} alt={drink.name} />
+          <h2>{drink.name}</h2>
+        </div>
+      </section>
     </div>
   )
 }
