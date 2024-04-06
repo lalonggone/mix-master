@@ -11,7 +11,7 @@ const mixedDrinkRecipes = [
         },
         alcoholic: true,
         isFavorite: false,
-        image: "",
+        image: "https://mezcalpro.com/wp-content/uploads/2023/05/mezcal-mojito-recipe.png",
     },
     {
         id: 2,

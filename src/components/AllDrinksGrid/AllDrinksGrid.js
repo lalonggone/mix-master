@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react'
 import './AllDrinksGrid.css'
 import NavBar from '../NavBar/NavBar'
@@ -21,7 +22,7 @@ function AllDrinksGrid({ recipes, setDrinkType }) {
     )
   })
 
-  return (
+return (
     <div>
       <section className="home-title">
         <h1>Mix Master</h1>
