@@ -1,16 +1,15 @@
-import React from 'react'
-import './AllDrinksGrid.css'
-import mixedDrinkRecipes from '../../mock-data' // we will update with a real API call
-import NavBar from '../NavBar/NavBar'
+import React from "react";
+import "./AllDrinksGrid.css";
+import mixedDrinkRecipes from "../../mock-data"; // we will update with a real API call
+import NavBar from "../NavBar/NavBar";
 
 function AllDrinksGrid() {
-
- return (
+  return (
     <div>
       <section className="home-title">
         <h1>Mix Master</h1>
       </section>
-        <NavBar />
+      <NavBar />
       <section className="drinks-grid">
         {mixedDrinkRecipes.map((recipe) => {
           return (
@@ -18,13 +17,11 @@ function AllDrinksGrid() {
               <img src={recipe.image} alt={recipe.name} />
               <h2>{recipe.name}</h2>
             </div>
-          )
+          );
         })}
-
       </section>
     </div>
- )
-
+  );
 }
 
 export default AllDrinksGrid;
