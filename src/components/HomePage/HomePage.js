@@ -1,17 +1,18 @@
 import React from 'react'
-import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './HomePage.css'
 
-function HomePage() {
-  const [drinkType, setDrinkType] = useState('')
+function HomePage({ drinkType, setDrinkType, findRecipes }) {
+
   const navigate = useNavigate()
 
   const handleChoice = (choice) => {
-    if (choice === 'alcoholic') {
-      navigate('/all')
-    } else if (choice === 'na') {
-      navigate('/na')
+    if (choice === 'true') {
+      navigate('/cocktails')
+      findRecipes()
+    } else if (choice === 'false') {
+      navigate('/mocktails')
+      findRecipes()
     }
   }
 
@@ -25,20 +26,20 @@ function HomePage() {
         <h1 className="quiz-title">Do you prefer...</h1>
         <div className="radio-container">
           <label className="radio">
-              Alcoholic beverages
+            Alcoholic beverages
             <input
               type="radio"
               name="drinkType"
-              value="alcoholic"
+              value="true"
               onChange={(e) => setDrinkType(e.target.value)}
-              />
+            />
           </label>
           <label className="radio">
-              NA beverages
+            NA beverages
             <input
               type="radio"
               name="drinkType"
-              value="na"
+              value="false"
               onChange={(e) => setDrinkType(e.target.value)}
             />
           </label>

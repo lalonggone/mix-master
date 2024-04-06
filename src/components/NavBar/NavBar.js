@@ -3,14 +3,19 @@ import { Link, useLocation } from 'react-router-dom'
 import mixedDrinkRecipes from '../../mock-data'
 import './NavBar.css'
 
-function NavBar() {
+function NavBar({ setDrinkType }) {
   const location = useLocation()
 
-  const initialShowAllDrinks = location.pathname === '/all'
+  const initialShowAllDrinks = location.pathname === '/cocktails'
   const [showAllDrinks, setShowAllDrinks] = useState(initialShowAllDrinks)
 
   const toggleDrinks = () => {
     setShowAllDrinks(!showAllDrinks)
+    if (showAllDrinks) {
+      setDrinkType('false')
+    } else {
+      setDrinkType('true')
+    }
   }
 
   const refreshPage = () => {
@@ -28,8 +33,8 @@ function NavBar() {
             </Link>
           </li>
           <li className="nav-item" onClick={toggleDrinks}>
-            <Link to={showAllDrinks ? '/na' : '/all'}>
-              {showAllDrinks ? 'NA Drinks' : 'All Drinks'}
+            <Link to={showAllDrinks ? '/mocktails' : '/cocktails'}>
+              {showAllDrinks ? 'Mocktails' : 'Cocktails'}
             </Link>
           </li>
           <li className="nav-item">
