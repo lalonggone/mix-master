@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react'
-import './NaDrinksGrid.css'
-import NavBar from '../NavBar/NavBar'
+import React, { useEffect } from 'react';
+import './NaDrinksGrid.css';
+import NavBar from '../NavBar/NavBar';
+import HeartIcon from '../../assets/heart-icon.svg';
+import HeartIconRed from '../../assets/heart-icon-red.svg';
 
 
 function NaDrinksGrid({ recipes, setDrinkType }) {
@@ -16,7 +18,10 @@ function NaDrinksGrid({ recipes, setDrinkType }) {
         return (
             <div className="drink-card" key={recipe.id}>
                 <img src={recipe.image} alt={recipe.name} />
-                <h2>{recipe.name}</h2>
+                <div className="drink-card-info">
+                    <h2>{recipe.name}</h2>
+                    <img src={recipe.isFavorite ? HeartIconRed : HeartIcon} alt="heart icon" className="heart-icon"/>
+                </div>
             </div>
         )
     })
