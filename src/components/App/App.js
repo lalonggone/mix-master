@@ -28,11 +28,12 @@ function App() {
     chooseRecipes(filteredRecipes)
   }
 
-  const toggleFavorite = (id) => {
+  function toggleFavorite(id) {
     const targetDrink = mixedDrinkRecipes.find((drink) => {
       return drink.id === id;
     })
     targetDrink.isFavorite = !targetDrink.isFavorite;
+    console.log(targetDrink);
   }
 
   return (

@@ -17,9 +17,30 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s;
-
+    color: antiquewhite; 
     &:hover {
       transform: scale(1.05);
     }
   }
+}
+
+.heart-icon {
+  height: 75%;
+}
+
+.drink-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.drink-card-image {
+  height: 80%;
+}
+
+a {
+  text-decoration: none;
 }
