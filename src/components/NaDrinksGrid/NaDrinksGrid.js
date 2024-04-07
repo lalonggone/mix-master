@@ -3,7 +3,7 @@ import './NaDrinksGrid.css';
 import NavBar from '../NavBar/NavBar';
 import HeartIcon from '../../assets/heart-icon.svg';
 import HeartIconRed from '../../assets/heart-icon-red.svg';
-
+import { Link } from 'react-router-dom';
 
 function NaDrinksGrid({ recipes, setDrinkType }) {
     useEffect(() => {
@@ -16,6 +16,7 @@ function NaDrinksGrid({ recipes, setDrinkType }) {
 
     const displayRecipes = recipes.map(recipe => {
         return (
+            <Link to={`/drink/${recipe.id}`}>
             <div className="drink-card" key={recipe.id}>
                 <img src={recipe.image} alt={recipe.name} />
                 <div className="drink-card-info">
@@ -23,6 +24,7 @@ function NaDrinksGrid({ recipes, setDrinkType }) {
                     <img src={recipe.isFavorite ? HeartIconRed : HeartIcon} alt="heart icon" className="heart-icon"/>
                 </div>
             </div>
+            </Link>
         )
     })
 

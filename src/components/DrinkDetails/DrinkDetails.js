@@ -6,7 +6,7 @@ import HeartIcon from '../../assets/heart-icon.svg';
 import HeartIconRed from '../../assets/heart-icon-red.svg';
 import { useState } from 'react';
 
-function DrinkDetails({toggleFavorite}) {
+function DrinkDetails({toggleFavorite, setDrinkType}) {
   const { id } = useParams();
   const parsedId = parseInt(id);
   const [favorite, setFavorite] = useState(false);
@@ -15,7 +15,7 @@ function DrinkDetails({toggleFavorite}) {
   })
   return (
     <section className='drink-details-page'>
-      <NavBar className='drink-details-nav'/>
+      <NavBar className='drink-details-nav' setDrinkType={setDrinkType}/>
       <div className='drink-details-container'>
         <img src={targetDrink.image} alt={`aesthetic view of a ${targetDrink.name}`} className='drink-details-image'/>
         <img src={targetDrink.isFavorite ? HeartIconRed : HeartIcon} alt="heart icon" className='drink-details-heart-icon' onClick={() => {
