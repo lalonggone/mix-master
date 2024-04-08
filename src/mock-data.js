@@ -711,7 +711,7 @@ const mixedDrinkRecipes = [
         },
         alcoholic: false,
         isFavorite: false,
-        image: ""
+        image: "https://iili.io/JkWMuRV.png"
       },
       {
         id: 36,
@@ -731,7 +731,7 @@ const mixedDrinkRecipes = [
         },
         alcoholic: false,
         isFavorite: false,
-        image: ""
+        image: "https://iili.io/JkXZLf1.png"
       },
       {
         id: 37,
@@ -750,7 +750,7 @@ const mixedDrinkRecipes = [
         },
         alcoholic: false,
         isFavorite: false,
-        image: ""
+        image: "https://iili.io/JkXZWN4.png"
       },
       {
         id: 38,
@@ -769,7 +769,7 @@ const mixedDrinkRecipes = [
         },
         alcoholic: false,
         isFavorite: false,
-        image: ""
+        image: "https://iili.io/JkXZSHb.png"
       },
       {
         id: 39,
@@ -788,7 +788,7 @@ const mixedDrinkRecipes = [
         },
         alcoholic: false,
         isFavorite: false,
-        image: ""
+        image: "https://iili.io/JkXZQ0F.png"
       },
       {
         id: 40,
@@ -1162,7 +1162,7 @@ const mixedDrinkRecipes = [
         },
         alcoholic: false,
         isFavorite: false,
-        image: ""
+        image: "https://iili.io/JkhGVPn.png"
       },
       {
         id: 59,
@@ -1181,7 +1181,7 @@ const mixedDrinkRecipes = [
         },
         alcoholic: false,
         isFavorite: false,
-        image: ""
+        image: "https://iili.io/JkhGQDB.png"
       },
       {
         id: 60,
@@ -1200,7 +1200,7 @@ const mixedDrinkRecipes = [
         },
         alcoholic: false,
         isFavorite: false,
-        image: ""
+        image: "https://iili.io/JkhGrKu.png"
       }
 ];
 
