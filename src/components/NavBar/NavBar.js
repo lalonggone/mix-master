@@ -22,13 +22,15 @@ function NavBar({ setDrinkType }) {
     window.location.reload()
   }
 
+  const randomId = Math.floor(Math.random() * (mixedDrinkRecipes.length - 1) + 1);
+
   return (
     <div>
       <div className="border"></div>
       <nav className="nav-container">
         <ul className="nav-list">
-          <li className="nav-item" onClick={refreshPage} >
-            <Link to="/random" >
+          <li className="nav-item">
+            <Link to={`/drink/${randomId}`} >
               Random Drink
             </Link>
           </li>
