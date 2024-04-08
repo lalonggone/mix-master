@@ -7,10 +7,11 @@
 
   .drink-card {
     width: 220px;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     border: solid 1px #333;
     padding: .3em;
     background: rgb(22, 22, 22) content-box;
@@ -21,6 +22,10 @@
     &:hover {
       transform: scale(1.05);
     }
+    h2 {
+      font-size: large;
+    }
+
   }
 }
 
@@ -38,7 +43,9 @@
 }
 
 .drink-card-image {
+  margin-top: 5%;
   height: 80%;
+  width: 95%;
 }
 
 a {

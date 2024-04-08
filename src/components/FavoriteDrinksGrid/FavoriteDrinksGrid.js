@@ -19,7 +19,7 @@ function FavoriteDrinksGrid({ setDrinkType }) {
       return (
         <Link to={`/drink/${recipe.id}`}>
         <div className="drink-card" key={recipe.id}>
-          <img src={recipe.image} alt={recipe.name} />
+          <img src={recipe.image} alt={recipe.name} className='drink-card-image'/>
           <div className="drink-card-info">
               <h2>{recipe.name}</h2>
               <img src={recipe.isFavorite ? HeartIconRed : HeartIcon} alt="heart icon" className="heart-icon"/>
