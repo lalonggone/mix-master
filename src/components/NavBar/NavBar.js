@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import mixedDrinkRecipes from '../../mock-data';
 import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css';
 

@@ -1,12 +1,14 @@
 import mixedDrinkRecipes from '../../mock-data';
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import './DrinkDetails.css';
 import NavBar from '../NavBar/NavBar';
+import exit from '../../assets/exit.png'
 import HeartIcon from '../../assets/heart-icon.svg';
 import HeartIconRed from '../../assets/heart-icon-red.svg';
 import { useState } from 'react';
 
-function DrinkDetails({toggleFavorite, setDrinkType}) {
+function DrinkDetails({ toggleFavorite, setDrinkType }) {
+  let navigate = useNavigate();
   const { id } = useParams();
   const parsedId = parseInt(id);
   const [favorite, setFavorite] = useState(false);
@@ -15,13 +17,14 @@ function DrinkDetails({toggleFavorite, setDrinkType}) {
   })
   return (
     <section className='drink-details-page'>
-      <NavBar className='drink-details-nav' setDrinkType={setDrinkType}/>
+      <NavBar className='drink-details-nav' setDrinkType={setDrinkType} />
       <div className='drink-details-container'>
-        <img src={targetDrink.image} alt={`aesthetic view of a ${targetDrink.name}`} className='drink-details-image'/>
+        <img src={targetDrink.image} alt={`aesthetic view of a ${targetDrink.name}`} className='drink-details-image' />
+        <img src={exit} alt='exit-details-page' className='drink-details-exit' onClick={() => { navigate(-1) }} />
         <img src={targetDrink.isFavorite ? HeartIconRed : HeartIcon} alt="heart icon" className='drink-details-heart-icon' onClick={() => {
           toggleFavorite(parsedId);
           setFavorite(!favorite);
-        }}/>
+        }} />
         <article className='drink-details-text'>
           <div className='drink-details-headers'>
             <h1 className='drink-details-name'>{targetDrink.name}</h1>
@@ -43,6 +46,7 @@ function DrinkDetails({toggleFavorite, setDrinkType}) {
               </ol>
             </div>
           </div>
+          {/* <button>Return to grid</button> */}
         </article>
       </div>
     </section>
