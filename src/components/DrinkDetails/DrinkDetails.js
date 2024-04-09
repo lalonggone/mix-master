@@ -1,11 +1,12 @@
 import mixedDrinkRecipes from '../../mock-data';
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom';
 import './DrinkDetails.css';
 import NavBar from '../NavBar/NavBar';
 import exit from '../../assets/exit.png'
 import HeartIcon from '../../assets/heart-icon.svg';
 import HeartIconRed from '../../assets/heart-icon-red.svg';
 import { useState } from 'react';
+import PropTypes from 'prop-types'
 
 function DrinkDetails({ toggleFavorite, setDrinkType }) {
   let navigate = useNavigate();
@@ -46,11 +47,15 @@ function DrinkDetails({ toggleFavorite, setDrinkType }) {
               </ol>
             </div>
           </div>
-          {/* <button>Return to grid</button> */}
         </article>
       </div>
     </section>
   )
 }
 
-export default DrinkDetails
+export default DrinkDetails;
+
+DrinkDetails.propTypes = {
+  toggleFavorite: PropTypes.func.isRequired,
+  setDrinkType: PropTypes.func.isRequired
+};

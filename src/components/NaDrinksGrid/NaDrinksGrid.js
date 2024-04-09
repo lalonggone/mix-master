@@ -52,7 +52,8 @@ NaDrinksGrid.propTypes ={
       id: PropTypes.number,
       ingredients: PropTypes.array, 
       isFavorite: PropTypes.bool,
-      name: PropTypes.string
+      name: PropTypes.string,
+      image: PropTypes.string
     })).isRequired,
     setDrinkType: PropTypes.func.isRequired
   };
