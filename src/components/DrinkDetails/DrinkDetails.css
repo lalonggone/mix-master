@@ -26,20 +26,20 @@
 
 .drink-details-image {
     height: 100%;
-    width: 50%;
+    width: 30%;
     mask-image: linear-gradient(to left, rgba(0,0,0,0) 5%,rgba(0, 0, 0, 0.99) 40%);
     -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0) 5%,rgba(0,0,0,0.99) 40%);
     border-radius: 1rem;
 }
 
 .drink-details-text {
-    width: 50%;
+    width: 70%;
     height: 100%;
     text-align: center;
     color: antiquewhite;
     display: flex;
     flex-direction: column;
-    font-size: large;
+    font-size: larger;
 }
 
 .drink-details-headers {
@@ -59,6 +59,7 @@
     position: absolute;
     right: 2%;
     top: 14%;
+    cursor: pointer;
 }
 
 .drink-details-ingredients,
