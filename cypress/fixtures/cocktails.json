@@ -1,82 +1,80 @@
-{
-    "mixedDrinkRecipes": [
-        {
-            "id": 1,
-            "name": "Blackberry Midnight Martini",
-            "ingredients": [
-                "2 oz Blackberry Vodka",
-                "1/2 oz Cointreau",
-                "1 oz Lemon Juice",
-                "Blackberries for garnish",
-                "Ice"
-            ],
-            "directions": {
-                "step1": "In a shaker, muddle a handful of blackberries.",
-                "step2": "Add blackberry vodka, Cointreau, lemon juice, and ice. Shake well.",
-                "step3": "Strain into a chilled martini glass and garnish with fresh blackberries."
-            },
-            "alcoholic": true,
-            "isFavorite": false,
-            "image": "assets/drink-card-images/Blackberry Midnight Martini.png"
+[
+    {
+        "id": 1,
+        "name": "Blackberry Midnight Martini",
+        "ingredients": [
+            "2 oz Blackberry Vodka",
+            "1/2 oz Cointreau",
+            "1 oz Lemon Juice",
+            "Blackberries for garnish",
+            "Ice"
+        ],
+        "directions": {
+            "step1": "In a shaker, muddle a handful of blackberries.",
+            "step2": "Add blackberry vodka, Cointreau, lemon juice, and ice. Shake well.",
+            "step3": "Strain into a chilled martini glass and garnish with fresh blackberries."
         },
-        {
-            "id": 2,
-            "name": "Cherry Citrus Manhattan",
-            "ingredients": [
-                "2 oz Rye Whiskey",
-                "1 oz Sweet Vermouth",
-                "1/4 oz Maraschino Liqueur",
-                "2 dashes Angostura Bitters",
-                "Orange twist",
-                "Ice",
-                "Maraschino Cherry"
-            ],
-            "directions": {
-                "step1": "In a mixing glass with ice, combine rye whiskey, sweet vermouth, maraschino liqueur, and bitters.",
-                "step2": "Stir well until chilled.",
-                "step3": "Strain into a chilled martini glass and garnish with a maraschino cherry and orange twist."
-            },
-            "alcoholic": true,
-            "isFavorite": false,
-            "image": "assets/drink-card-images/Cherry Citrus Manhattan.png"
+        "alcoholic": true,
+        "isFavorite": false,
+        "image": "https://imagizer.imageshack.com/v2/305x416q70/r/923/o3X1dK.png"
+    },
+    {
+        "id": 2,
+        "name": "Cherry Citrus Manhattan",
+        "ingredients": [
+            "2 oz Rye Whiskey",
+            "1 oz Sweet Vermouth",
+            "1/4 oz Maraschino Liqueur",
+            "2 dashes Angostura Bitters",
+            "Orange twist",
+            "Ice",
+            "Maraschino Cherry"
+        ],
+        "directions": {
+            "step1": "In a mixing glass with ice, combine rye whiskey, sweet vermouth, maraschino liqueur, and bitters.",
+            "step2": "Stir well until chilled.",
+            "step3": "Strain into a chilled martini glass and garnish with a maraschino cherry and orange twist."
         },
-        {
-            "id": 3,
-            "name": "Cucumber Basil Smash",
-            "ingredients": [
-                "2 oz Gin",
-                "3/4 oz Lemon Juice",
-                "3/4 oz Simple Syrup",
-                "Cucumber Slices",
-                "Fresh Basil Leaves",
-                "Ice"
-            ],
-            "directions": {
-                "step1": "Muddle cucumber slices and basil leaves with simple syrup in a shaker.",
-                "step2": "Add gin, lemon juice, and ice, then shake vigorously.",
-                "step3": "Strain into a rocks glass filled with ice and garnish with a cucumber ribbon and basil sprig."
-            },
-            "alcoholic": true,
-            "isFavorite": true,
-            "image": "assets/drink-card-images/Cucumber-Basil-Smash.png"
+        "alcoholic": true,
+        "isFavorite": false,
+        "image": "https://imagizer.imageshack.com/v2/238x416q70/r/922/zgdu15.png"
+    },
+    {
+        "id": 3,
+        "name": "Cucumber Basil Smash",
+        "ingredients": [
+            "2 oz Gin",
+            "3/4 oz Lemon Juice",
+            "3/4 oz Simple Syrup",
+            "Cucumber Slices",
+            "Fresh Basil Leaves",
+            "Ice"
+        ],
+        "directions": {
+            "step1": "Muddle cucumber slices and basil leaves with simple syrup in a shaker.",
+            "step2": "Add gin, lemon juice, and ice, then shake vigorously.",
+            "step3": "Strain into a rocks glass filled with ice and garnish with a cucumber ribbon and basil sprig."
         },
-        {
-            "id": 4,
-            "name": "Screwdriver",
-            "ingredients": [
-                "2 oz Vodka",
-                "5 oz Fresh Orange Juice",
-                "Ice",
-                "Orange Slice for garnish"
-            ],
-            "directions": {
-                "step1": "Fill a highball glass with ice cubes.",
-                "step2": "Pour vodka and orange juice into the glass.",
-                "step3": "Stir well and garnish with an orange slice."
-            },
-            "alcoholic": false,
-            "isFavorite": false,
-            "image": ""
-        }
-    ]
-}
+        "alcoholic": true,
+        "isFavorite": true,
+        "image": "https://imagizer.imageshack.com/v2/238x416q70/r/923/Lmpi2W.png"
+    },
+    {
+        "id": 4,
+        "name": "Screwdriver",
+        "ingredients": [
+            "2 oz Vodka",
+            "5 oz Fresh Orange Juice",
+            "Ice",
+            "Orange Slice for garnish"
+        ],
+        "directions": {
+            "step1": "Fill a highball glass with ice cubes.",
+            "step2": "Pour non-alcoholic vodka and orange juice into the glass.",
+            "step3": "Stir well and garnish with an orange slice."
+        },
+        "alcoholic": false,
+        "isFavorite": false,
+        "image": "https://imagizer.imageshack.com/v2/292x416q70/r/922/qYkZb7.png"
+    }
+]

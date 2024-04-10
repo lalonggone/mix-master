@@ -20,8 +20,8 @@ function App() {
     updateRecipes()
   }, [])
 
-  const updateRecipes = () => {
-    getRecipes()
+  async function updateRecipes() {
+    await getRecipes()
     .then(data => setRecipes(data))
     .catch(error => console.log(error))
   }
