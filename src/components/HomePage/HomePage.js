@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
 import './HomePage.css'
 
@@ -51,3 +52,9 @@ function HomePage({ drinkType, setDrinkType, findRecipes }) {
 }
 
 export default HomePage
+
+HomePage.propTypes = {
+  drinkType: PropTypes.string,
+  setDrinkType: PropTypes.func.isRequired,
+  findRecipes: PropTypes.func.isRequired
+}

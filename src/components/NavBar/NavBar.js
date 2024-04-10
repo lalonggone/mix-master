@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import mixedDrinkRecipes from '../../mock-data'
-import './NavBar.css'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import mixedDrinkRecipes from '../../mock-data';
+import { Link, useLocation } from 'react-router-dom';
+import './NavBar.css';
 
 function NavBar({ setDrinkType }) {
   const location = useLocation()
@@ -49,4 +50,8 @@ function NavBar({ setDrinkType }) {
   )
 }
 
-export default NavBar
+export default NavBar;
+
+NavBar.propType = {
+  setDrinkType: PropTypes.func.isRequired
+}

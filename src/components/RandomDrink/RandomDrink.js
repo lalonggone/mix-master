@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import NavBar from '../NavBar/NavBar'
-import mixedDrinkRecipes from '../../mock-data'
+import React, { useState, useEffect } from 'react';
+import NavBar from '../NavBar/NavBar';
+import PropTypes from 'prop-types'
+import mixedDrinkRecipes from '../../mock-data';
 
 const RandomDrink = ({ setDrinkType }) => {
   const [drink, setDrink] = useState('')
@@ -32,3 +33,7 @@ const RandomDrink = ({ setDrinkType }) => {
 }
 
 export default RandomDrink
+
+RandomDrink.propTypes = {
+  setDrinkType: PropTypes.func.isRequired
+}

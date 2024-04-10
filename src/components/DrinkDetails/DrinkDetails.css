@@ -9,6 +9,18 @@
     height: 20%;
     width: 100%;
 }
+
+.drink-details-exit {
+    height: 5%;
+    position: absolute;
+    top: 12%;
+    left: 3%;
+    cursor: pointer;
+    &:hover {
+        border-style: inset;
+    }
+}
+
 .drink-details-container {
     display: flex;
     align-items: center;
@@ -22,6 +34,7 @@
 
 .drink-details-name {
     font-size: xxx-large;
+    margin-bottom: 0px;
 }
 
 .drink-details-image {
@@ -54,11 +67,16 @@
     display: flex;
 }
 
+.drink-details-headers h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
 .drink-details-heart-icon {
     height: 10%;
     position: absolute;
-    right: 2%;
-    top: 14%;
+    right: 3%;
+    top: 12%;
     cursor: pointer;
 }
 
@@ -70,5 +88,6 @@
     text-wrap: pretty;
     padding-left: 5%;
     padding-right: 5%;
+    text-align: center;
 }
 
