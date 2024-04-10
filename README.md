@@ -9,6 +9,11 @@ Mix Master eases the stress of entertaining by providing a myriad of cocktail an
 - [Megan Crotteau](https://github.com/crotteau)
 
 ## Preview
+### Deployed Link - [Mix Master](https://mix-master-fe.vercel.app/)
+
+![Homepage](https://github.com/lalonggone/mix-master-fe/assets/149750476/867ca92e-964c-4fab-af5b-272b9025842e)
+![Cocktial Recipe Grid](https://github.com/lalonggone/mix-master-fe/assets/149750476/db3d20fa-bd19-4401-8cbe-b3c67eab0c1a)
+![Cocktail Details](https://github.com/lalonggone/mix-master-fe/assets/149750476/f1f09636-b8b4-4c82-ad2e-30f6898bc9dc")
 
 ## Technologies Used
 <div>
