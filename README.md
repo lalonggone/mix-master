@@ -2,6 +2,7 @@
 
 ## About
 
+
 ## Contributors
 - [Laura Long](https://github.com/lalonggone)
 - [David Kwon](https://github.com/dkwon1223)
@@ -23,6 +24,15 @@
   <img src='https://img.shields.io/badge/Amazon%20AWS-232F3E.svg?style=for-the-badge&logo=Amazon-AWS&logoColor=white' alt='aws'/>
 </div>
 
+## Cypress Testing
+We used Cypress to implement E2E testing for our app. To run our tests:
+- `git clone` this [repo](https://github.com/lalonggone/mix-master-fe)
+- `cd` into the directory
+- `npm i` to install dependencies
+- `npm start` and open http://localhost:3000 in your browser
+- `npm run cypress:open` will start Cypress and open up test window
+- when finished, run `ctrl + c` to stop running local server
+  
 ## Background
 
 ## Challenges and Wins
