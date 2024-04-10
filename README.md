@@ -37,6 +37,7 @@ We used Cypress to implement E2E testing for our app. To run our tests:
 The goal of this project was to explore a new technology while building off of our existing knowledge in React. As front-end students at Turing, we haven't had as much exposure to back-end technologies, so the main objective for this project was to explore and implement our very own back-end. Over the course of a week, we learned how to build a server in Express, use Knex to connect the server to a PostgreSQL database, and deploy the database on AWS and the server on Render. 
 
 ## Challenges and Wins
+- It proved to be quite a challenge deploying a frontend React app and having it communicate to a deployed Express/Knex server which then communicated to an AWS RDS Postgres database - despite the challenge, we managed to succeed and overcome a new technological hurdle!
 
 ## Future Directions
 - Implementing a search feature for recipes by name
