@@ -6,7 +6,7 @@ import FavoriteDrinksGrid from '../FavoriteDrinksGrid/FavoriteDrinksGrid';
 import React, { useState, useEffect } from 'react'
 import RandomDrink from '../RandomDrink/RandomDrink';
 import DrinkDetails from '../DrinkDetails/DrinkDetails';
-// import NotFound from '../NotFound/NotFound';
+import NotFound from '../NotFound/NotFound';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import { findAllByAltText } from '@testing-library/react';
 import { getRecipes } from '../../apiCalls'
@@ -55,6 +55,7 @@ function App() {
           <Route path="/favorites" element={<FavoriteDrinksGrid setDrinkType={setDrinkType} mixedDrinkRecipes={mixedDrinkRecipes} />} />
           <Route path="/random" element={<RandomDrink setDrinkType={setDrinkType} />} />
           <Route path="/drink/:id" element={<DrinkDetails toggleFavorite={toggleFavorite} setDrinkType={setDrinkType} mixedDrinkRecipes={mixedDrinkRecipes} />} />
+          <Route path="*" element={<NotFound />}/>
         </Routes>
       </BrowserRouter>
     </div>
