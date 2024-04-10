@@ -42,7 +42,6 @@ function App() {
       return drink.id === id;
     })
     targetDrink.isFavorite = !targetDrink.isFavorite;
-    console.log(targetDrink);
   }
 
   return (

@@ -7,6 +7,7 @@ import HeartIcon from '../../assets/heart-icon.svg';
 import HeartIconRed from '../../assets/heart-icon-red.svg';
 import { useState } from 'react';
 import PropTypes from 'prop-types'
+import { patchFavorite } from '../../apiCalls';
 
 function DrinkDetails({ toggleFavorite, setDrinkType, mixedDrinkRecipes }) {
   let navigate = useNavigate();
@@ -25,6 +26,7 @@ function DrinkDetails({ toggleFavorite, setDrinkType, mixedDrinkRecipes }) {
         <img src={targetDrink.isFavorite ? HeartIconRed : HeartIcon} alt="heart icon" className='drink-details-heart-icon' onClick={() => {
           toggleFavorite(parsedId);
           setFavorite(!favorite);
+          patchFavorite(id, !favorite);
         }} />
         <article className='drink-details-text'>
           <div className='drink-details-headers'>
