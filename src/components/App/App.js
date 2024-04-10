@@ -6,7 +6,7 @@ import FavoriteDrinksGrid from '../FavoriteDrinksGrid/FavoriteDrinksGrid';
 import React, { useState, useEffect } from 'react'
 import RandomDrink from '../RandomDrink/RandomDrink';
 import DrinkDetails from '../DrinkDetails/DrinkDetails';
-// import NotFound from '../NotFound/NotFound';
+import NotFound from '../NotFound/NotFound';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import { findAllByAltText } from '@testing-library/react';
 import { getRecipes } from '../../apiCalls'
@@ -20,8 +20,8 @@ function App() {
     updateRecipes()
   }, [])
 
-  const updateRecipes = () => {
-    getRecipes()
+  async function updateRecipes() {
+    await getRecipes()
     .then(data => setRecipes(data))
     .catch(error => console.log(error))
   }
@@ -42,7 +42,6 @@ function App() {
       return drink.id === id;
     })
     targetDrink.isFavorite = !targetDrink.isFavorite;
-    console.log(targetDrink);
   }
 
   return (
@@ -55,6 +54,7 @@ function App() {
           <Route path="/favorites" element={<FavoriteDrinksGrid setDrinkType={setDrinkType} mixedDrinkRecipes={mixedDrinkRecipes} />} />
           <Route path="/random" element={<RandomDrink setDrinkType={setDrinkType} />} />
           <Route path="/drink/:id" element={<DrinkDetails toggleFavorite={toggleFavorite} setDrinkType={setDrinkType} mixedDrinkRecipes={mixedDrinkRecipes} />} />
+          <Route path="*" element={<NotFound />}/>
         </Routes>
       </BrowserRouter>
     </div>
