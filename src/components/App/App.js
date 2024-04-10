@@ -1,5 +1,4 @@
 import './App.css';
-// import mixedDrinkRecipes from '../../mock-data'
 import HomePage from '../HomePage/HomePage';
 import AllDrinksGrid from '../AllDrinksGrid/AllDrinksGrid';
 import NaDrinksGrid from '../NaDrinksGrid/NaDrinksGrid';
@@ -29,11 +28,7 @@ function App() {
 
   useEffect(() => {
     findRecipes()
-  }, [drinkType])
-
-  useEffect(() => {
-    findRecipes()
-  }, [mixedDrinkRecipes])
+  }, [mixedDrinkRecipes, drinkType])
 
   const findRecipes = () => {
     const filteredRecipes = mixedDrinkRecipes.filter(recipe => {

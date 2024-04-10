@@ -58,5 +58,6 @@ NaDrinksGrid.propTypes = {
         name: PropTypes.string,
         image: PropTypes.string
     })).isRequired,
-    setDrinkType: PropTypes.func.isRequired
+    setDrinkType: PropTypes.func.isRequired,
+    updateRecipes: PropTypes.func.isRequired
 };

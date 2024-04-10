@@ -57,5 +57,14 @@ export default DrinkDetails;
 
 DrinkDetails.propTypes = {
   toggleFavorite: PropTypes.func.isRequired,
-  setDrinkType: PropTypes.func.isRequired
+  setDrinkType: PropTypes.func.isRequired,
+  mixedDrinkRecipes: PropTypes.arrayOf(PropTypes.shape({
+    alcoholic: PropTypes.bool,
+    directions: PropTypes.object,
+    id: PropTypes.number,
+    ingredients: PropTypes.array,
+    isFavorite: PropTypes.bool,
+    name: PropTypes.string,
+    image: PropTypes.string
+  })).isRequired
 };

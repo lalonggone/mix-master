@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-// import DrinkDetails from '../DrinkDetails/DrinkDetails';
-// import mixedDrinkRecipes from '../../mock-data';
+import PropTypes, { object } from 'prop-types';
 import NavBar from '../NavBar/NavBar';
 import HeartIcon from '../../assets/heart-icon.svg';
 import HeartIconRed from '../../assets/heart-icon-red.svg';
@@ -20,13 +18,13 @@ function FavoriteDrinksGrid({ setDrinkType, mixedDrinkRecipes }) {
     }).map(recipe => {
       return (
         <Link to={`/drink/${recipe.id}`}>
-        <div className="drink-card" key={recipe.id}>
-          <img src={recipe.image} alt={recipe.name} className='drink-card-image'/>
-          <div className="drink-card-info">
+          <div className="drink-card" key={recipe.id}>
+            <img src={recipe.image} alt={recipe.name} className='drink-card-image' />
+            <div className="drink-card-info">
               <h2>{recipe.name}</h2>
-              <img src={recipe.isFavorite ? HeartIconRed : HeartIcon} alt="heart icon" className="heart-icon"/>
+              <img src={recipe.isFavorite ? HeartIconRed : HeartIcon} alt="heart icon" className="heart-icon" />
+            </div>
           </div>
-        </div>
         </Link>
       )
     })
@@ -51,5 +49,14 @@ function FavoriteDrinksGrid({ setDrinkType, mixedDrinkRecipes }) {
 export default FavoriteDrinksGrid;
 
 FavoriteDrinksGrid.propTypes = {
-  setDrinkType: PropTypes.func.isRequired
+  setDrinkType: PropTypes.func.isRequired,
+  mixedDrinkRecipes: PropTypes.arrayOf(PropTypes.shape({
+    alcoholic: PropTypes.bool,
+    directions: PropTypes.object,
+    id: PropTypes.number,
+    ingredients: PropTypes.array,
+    isFavorite: PropTypes.bool,
+    name: PropTypes.string,
+    image: PropTypes.string
+  })).isRequired
 };
