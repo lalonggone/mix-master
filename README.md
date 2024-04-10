@@ -1,7 +1,7 @@
 # Mix Master
 
 ## About
-
+Mix Master eases the stress of entertaining by providing a myriad of cocktail and mocktail recipes! Users can filter recipes based on alcohol content and 'favorite' recipes for viewing later. 
 
 ## Contributors
 - [Laura Long](https://github.com/lalonggone)
@@ -38,3 +38,7 @@ We used Cypress to implement E2E testing for our app. To run our tests:
 ## Challenges and Wins
 
 ## Future Directions
+- Implementing a search feature for recipes by name
+- Allowing users to add their own drink recipes
+- Monetized version, MixMasterPro, that gives access to premium features
+
