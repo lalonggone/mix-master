@@ -6,11 +6,13 @@ import HeartIconRed from '../../assets/heart-icon-red.svg';
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 
-
-function AllDrinksGrid({ recipes, setDrinkType }) {
+function AllDrinksGrid({ recipes, setDrinkType, updateRecipes }) {
   useEffect(() => {
-    showCocktails();
-  }, []);
+    if (recipes.length < 1) {
+      updateRecipes()
+    }
+    showCocktails()
+  }, [])
 
   const showCocktails = () => {
     setDrinkType("true");

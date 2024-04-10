@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import DrinkDetails from '../DrinkDetails/DrinkDetails';
-import mixedDrinkRecipes from '../../mock-data';
+// import DrinkDetails from '../DrinkDetails/DrinkDetails';
+// import mixedDrinkRecipes from '../../mock-data';
 import NavBar from '../NavBar/NavBar';
 import HeartIcon from '../../assets/heart-icon.svg';
 import HeartIconRed from '../../assets/heart-icon-red.svg';
 import { Link } from 'react-router-dom';
 
-function FavoriteDrinksGrid({ setDrinkType }) {
+function FavoriteDrinksGrid({ setDrinkType, mixedDrinkRecipes }) {
   const [favorites, setFavorites] = useState([])
 
   useEffect(() => {

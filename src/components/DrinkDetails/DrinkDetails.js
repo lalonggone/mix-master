@@ -1,4 +1,4 @@
-import mixedDrinkRecipes from '../../mock-data';
+// import mixedDrinkRecipes from '../../mock-data';
 import { useParams, useNavigate } from 'react-router-dom';
 import './DrinkDetails.css';
 import NavBar from '../NavBar/NavBar';
@@ -8,7 +8,7 @@ import HeartIconRed from '../../assets/heart-icon-red.svg';
 import { useState } from 'react';
 import PropTypes from 'prop-types'
 
-function DrinkDetails({ toggleFavorite, setDrinkType }) {
+function DrinkDetails({ toggleFavorite, setDrinkType, mixedDrinkRecipes }) {
   let navigate = useNavigate();
   const { id } = useParams();
   const parsedId = parseInt(id);
