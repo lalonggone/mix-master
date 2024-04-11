@@ -18,7 +18,7 @@ function HomePage({ drinkType, setDrinkType, findRecipes }) {
   }
 
   return (
-    <div>
+    <>
       <section className="home-title">
         <h1>Mix Master</h1>
         <p>your drink recipe companion</p>
@@ -47,7 +47,7 @@ function HomePage({ drinkType, setDrinkType, findRecipes }) {
         </div>
         <button onClick={() => handleChoice(drinkType)}>Find Drinks</button>
       </section>
-    </div>
+    </>
   )
 }
 

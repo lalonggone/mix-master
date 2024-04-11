@@ -7,13 +7,14 @@ body {
   url(../../assets/noise.svg),
   radial-gradient(
     circle at 50% 10%,
-    #cb5b23 17%,
-    #a44c63 30%,
-    #1b6874 80%
+    #7a7a7a 17%,
+    #7a7777 30%,
+    #022529 80%
   );
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 
-  color: #333;
+  color: #282828;
 }
+

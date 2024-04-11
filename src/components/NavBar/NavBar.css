@@ -24,7 +24,15 @@
     justify-content: space-around;
 }
 
+.nav-item a {
+    text-decoration: none;
+    color: #282828;
+}
+
 .nav-item {
-    cursor: pointer;
-    /* text-decoration: none; */
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
 }

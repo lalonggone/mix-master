@@ -1,7 +1,7 @@
 import './App.css';
 import HomePage from '../HomePage/HomePage';
-import AllDrinksGrid from '../AllDrinksGrid/AllDrinksGrid';
-import NaDrinksGrid from '../NaDrinksGrid/NaDrinksGrid';
+import AllDrinksGrid from '../CocktailsGrid/CocktailsGrid';
+import NaDrinksGrid from '../MocktailsGrid/MocktailsGrid';
 import FavoriteDrinksGrid from '../FavoriteDrinksGrid/FavoriteDrinksGrid';
 import React, { useState, useEffect } from 'react'
 import RandomDrink from '../RandomDrink/RandomDrink';
