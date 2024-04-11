@@ -3,7 +3,7 @@ import NavBar from '../NavBar/NavBar';
 import PropTypes from 'prop-types'
 import mixedDrinkRecipes from '../../mock-data';
 
-const RandomDrink = ({ setDrinkType }) => {
+const RandomDrink = ({ setDrinkType, mixedDrinkRecipes }) => {
   const [drink, setDrink] = useState('')
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const RandomDrink = ({ setDrinkType }) => {
       <section className="home-title">
         <h1>Mix Master</h1>
       </section>
-      <NavBar setDrinkType={setDrinkType}/>
+      <NavBar setDrinkType={setDrinkType} mixedDrinkRecipes={mixedDrinkRecipes}/>
       <section className="drinks-grid">
         <div className="drink-card" key={drink.id}>
           <img src={drink.image} alt={drink.name} />

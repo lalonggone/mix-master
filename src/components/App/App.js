@@ -52,7 +52,7 @@ function App() {
           <Route path="/cocktails" element={<AllDrinksGrid recipes={chosenRecipes} setDrinkType={setDrinkType} updateRecipes={updateRecipes}/>} />
           <Route path="/mocktails" element={<NaDrinksGrid recipes={chosenRecipes} setDrinkType={setDrinkType} updateRecipes={updateRecipes}/>} />
           <Route path="/favorites" element={<FavoriteDrinksGrid setDrinkType={setDrinkType} mixedDrinkRecipes={mixedDrinkRecipes} />} />
-          <Route path="/random" element={<RandomDrink setDrinkType={setDrinkType} />} />
+          <Route path="/random" element={<RandomDrink setDrinkType={setDrinkType} mixedDrinkRecipes={mixedDrinkRecipes}/>} />
           <Route path="/drink/:id" element={<DrinkDetails toggleFavorite={toggleFavorite} setDrinkType={setDrinkType} mixedDrinkRecipes={mixedDrinkRecipes} />} />
           <Route path="*" element={<NotFound />}/>
         </Routes>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import mixedDrinkRecipes from '../../mock-data';
 import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css';
 
@@ -19,11 +18,7 @@ function NavBar({ setDrinkType }) {
     }
   }
 
-  const refreshPage = () => {
-    window.location.reload()
-  }
-
-  const randomId = Math.floor(Math.random() * (mixedDrinkRecipes.length - 1) + 1);
+  const randomId = Math.floor(Math.random() * (121 - 61 + 1)) + 61;
 
   return (
     <div>
