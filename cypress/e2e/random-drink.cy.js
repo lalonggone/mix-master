@@ -1,6 +1,14 @@
 describe('Random Drink', () => {
-  it('should visit a random drink', () => {
-    cy.visit('http://localhost:3000/drink/50') // stub here
+  beforeEach(() => {
+    cy.intercept('GET', "https://mix-master-api.onrender.com/api/v1/drink/50", {
+      statusCode: 200,
+      fixture: "cocktails.json",
+      timeout: 10000
+    }) 
+    cy.visit('http://localhost:3000/drink/50') 
+  })
+  
+    it('should visit a random drink', () => {
     cy.get('.drink-details-name').should('exist')
     cy.get('.drink-details-ingredients > h3').should('exist')
     cy.get('.drink-details-directions > h3').should('exist')

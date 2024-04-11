@@ -1,5 +1,10 @@
 describe('home page', () => {
   beforeEach(() => {
+    cy.intercept('GET', "https://mix-master-api.onrender.com/api/v1/", {
+      statusCode: 200,
+      fixture: "cocktails.json",
+      timeout: 10000
+    })
     cy.visit('http://localhost:3000')
   })
 
