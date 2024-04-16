@@ -7,9 +7,9 @@ body {
   url(../../assets/noise.svg),
   radial-gradient(
     circle at 50% 10%,
-    #7a7a7a 17%,
-    #7a7777 30%,
-    #022529 80%
+    #9f9f9f 17%,
+    #828282 30%,
+    #262e2f 80%
   );
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -17,7 +17,6 @@ body {
 
   color: #282828;
 }
-
 
 @media (max-width: 700px) {
   .App {

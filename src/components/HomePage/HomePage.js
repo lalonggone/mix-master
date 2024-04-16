@@ -18,16 +18,16 @@ function HomePage({ drinkType, setDrinkType, findRecipes }) {
   }
 
   return (
-    <>
+    <div className="home">
       <section className="home-title">
         <h1>Mix Master</h1>
         <p>your drink recipe companion</p>
       </section>
       <section className="quiz-section">
-        <h1 className="quiz-title">Do you prefer...</h1>
+        <h2 className="quiz-title">Do you prefer...</h2>
         <div className="radio-container">
           <label className="radio">
-            Alcoholic beverages
+            Cocktails
             <input
               type="radio"
               name="drinkType"
@@ -36,7 +36,7 @@ function HomePage({ drinkType, setDrinkType, findRecipes }) {
             />
           </label>
           <label className="radio">
-            NA beverages
+            Mocktails
             <input
               type="radio"
               name="drinkType"
@@ -45,9 +45,9 @@ function HomePage({ drinkType, setDrinkType, findRecipes }) {
             />
           </label>
         </div>
-        <button onClick={() => handleChoice(drinkType)}>Find Drinks</button>
+        <button className="submit-button" onClick={() => handleChoice(drinkType)}>Find Drinks</button>
       </section>
-    </>
+    </div>
   )
 }
 

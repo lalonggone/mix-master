@@ -10,6 +10,7 @@ import NotFound from '../NotFound/NotFound';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import { findAllByAltText } from '@testing-library/react';
 import { getRecipes } from '../../apiCalls'
+// import mockData from '../../mock-data'
 
 function App() {
   const [mixedDrinkRecipes, setRecipes] = useState([])

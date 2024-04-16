@@ -18,7 +18,7 @@ function DrinkDetails({ toggleFavorite, setDrinkType, mixedDrinkRecipes }) {
     return drink.id === parsedId;
   })
   return (
-    <section className='drink-details-page'>
+    <div>
       <NavBar className='drink-details-nav' setDrinkType={setDrinkType} />
       <div className='drink-details-container'>
         <img src={targetDrink.image} alt={`aesthetic view of a ${targetDrink.name}`} className='drink-details-image' />
@@ -51,7 +51,7 @@ function DrinkDetails({ toggleFavorite, setDrinkType, mixedDrinkRecipes }) {
           </div>
         </article>
       </div>
-    </section>
+    </div>
   )
 }
 
