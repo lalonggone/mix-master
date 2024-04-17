@@ -1,0 +1,77 @@
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+}
+
+
+.drinks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 3em;
+  padding: 3em;
+  justify-items: center;
+
+  .drink-card {
+    position: relative;
+    width: 220px;
+    height: 350px;
+    transition: transform 0.3s;
+    color: antiquewhite;
+    margin: 0px;
+    /* padding: 10px; */
+    box-sizing: border-box;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .drink-card-image {
+      position: absolute;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      filter: brightness(0.8);
+      transition: filter 0.3s;
+
+      .drink-card:hover & {
+        filter: brightness(1);
+      }
+    }
+
+    .drink-card-info {
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.heart-icon {
+  position: absolute;
+  height: 15%;
+  top: 0;
+  margin: 5px;
+  /* display: none; */
+}
+
+h2 {
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  margin: 0;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+}

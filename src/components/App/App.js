@@ -1,7 +1,7 @@
 import './App.css';
 import HomePage from '../HomePage/HomePage';
-import AllDrinksGrid from '../AllDrinksGrid/AllDrinksGrid';
-import NaDrinksGrid from '../NaDrinksGrid/NaDrinksGrid';
+import AllDrinksGrid from '../CocktailsGrid/CocktailsGrid';
+import NaDrinksGrid from '../MocktailsGrid/MocktailsGrid';
 import FavoriteDrinksGrid from '../FavoriteDrinksGrid/FavoriteDrinksGrid';
 import React, { useState, useEffect } from 'react'
 import RandomDrink from '../RandomDrink/RandomDrink';
@@ -10,6 +10,7 @@ import NotFound from '../NotFound/NotFound';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import { findAllByAltText } from '@testing-library/react';
 import { getRecipes } from '../../apiCalls'
+// import mockData from '../../mock-data'
 
 function App() {
   const [mixedDrinkRecipes, setRecipes] = useState([])
